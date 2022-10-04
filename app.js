@@ -17,7 +17,8 @@ const quiz = [
 ];
 
 let score = 0;
-const $Button = document.getElementsByTagName('button');
+const $Button = document.getElementsByClassName('btn btn-primary');
+const $backButton = document.getElementById('js-back-btn');
 let quizIndex = 0;
 const quizLength = quiz.length;
 
@@ -53,3 +54,19 @@ for (let i = 0; i < $Button.length; i++) {
     clickHandler(e);
   });
 }
+
+//back button
+$backButton.addEventListener('click', () => {
+  if (window.confirm('Back to the first question?') === true) {
+    clickBack();
+  }
+});
+
+const clickBack = () => {
+  score = 0;
+  quizIndex = 0;
+  document.getElementById('js-question').textContent = quiz[0].question;
+  for (let i = 0; i < $Button.length; i++) {
+    $Button[i].textContent = quiz[quizIndex].answers[i];
+  }
+};
