@@ -30,31 +30,34 @@
     <div class="container">
       <div class="jumbotron mt-5">
         <div class="d-flex justify-content-center">
-          <div id="js-question" class="alert alert-primary" role="alert">
-            A simple primary alert—check it out!
-          </div>
+          <div id="js-selectMsg" class="alert alert-warning" role="alert">SELECT QUIZ LEVEL !</div>
         </div>
 
         <div id="js-items" class="d-flex justify-content-center">
           <div class="m-2">
-            <button type="button" id="js-btn-1" class="btn btn-primary">Primary</button>
+            <button data-index="1" type="button" id="js-level-1" class="btn btn-success btn-lg">
+              Level 1
+            </button>
           </div>
           <div class="m-2">
-            <button type="button" id="js-btn-2" class="btn btn-primary">Primary</button>
+            <button data-index="2" type="button" id="js-level-2" class="btn btn-success btn-lg">
+              Level 2
+            </button>
           </div>
           <div class="m-2">
-            <button type="button" id="js-btn-3" class="btn btn-primary">Primary</button>
-          </div>
-          <div class="m-2">
-            <button type="button" id="js-btn-4" class="btn btn-primary">Primary</button>
+            <button data-index="3" type="button" id="js-level-3" class="btn btn-success btn-lg">
+              Level 3
+            </button>
           </div>
         </div>
         <div id="js-items" class="d-flex justify-content-center">
-          <button type="button" id="js-back-btn" class="btn btn-outline-primary">Back</button>
+          <button type="button" id="js-back-btn" class="btn btn-outline-primary">
+            <a href="#">Back</a>
+          </button>
         </div>
       </div>
     </div>
 
-    <script src="app.js"></script>
+    <script src="./src/select.js"></script>
   </body>
 </html>
