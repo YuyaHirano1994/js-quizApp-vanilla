@@ -5,7 +5,7 @@ const $selectLevel3 = document.getElementById('js-level-3');
 
 //select level
 $selectLevel1.addEventListener('click', () => {
-  location.href = './quiz.html?quizLevel=1';
+  location.href = '../quiz.html?quizLevel=1';
 });
 $selectLevel2.addEventListener('click', () => {
   location.href = './quiz.html?quizLevel=2';
